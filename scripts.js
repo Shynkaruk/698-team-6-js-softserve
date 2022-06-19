@@ -157,7 +157,11 @@ function makeNegative(num) {
    }
  }
  
- //5 ----
+ //5 https://www.codewars.com/kata/keep-hydrated-1/train/javascript
+
+ function litres(time) {
+  return time/2-((time/2)%1);
+}
  
  //6 https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
  
