@@ -25,4 +25,11 @@ var max = function (list) {
     return list[0];
 }
 
+//4 https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+
+function min(arr, toReturn) {
+    let value = Math.min.apply(null,arr);
+    return toReturn === 'value' ? val : arr.indexOf(val);
+}
+
 // Solution by (Name)
