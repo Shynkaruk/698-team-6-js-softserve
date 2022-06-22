@@ -31,6 +31,34 @@ function min(arr, toReturn) {
     let value = Math.min.apply(null, arr);
     return toReturn === 'value' ? val : arr.indexOf(val);
 }
+//Поглиблені задачі:
+
+//1 https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+
+function warnTheSheep(queue) {
+  const sheepQueue = queue.reverse();
+  let wolfIndex =  sheepQueue.indexOf("wolf");
+  const wolfMessageEaten = `Oi! Sheep number ${wolfNum}! You are about to be eaten by a wolf!`;
+  const wolfMessageAway = `Pls go away and stop eating my sheep`;
+ return sheepQueue.indexOf("wolf") !== 0 ? wolfMessageEaten : wolfMessageAway;
+}
+
+//2 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+
+function maps(x){
+  return x.map((num) => num * 2);
+}
+
+//3 https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] + 1 !== arr[i + 1]) {
+      return arr[i + 1];
+    }
+  }
+  return null;
+}
 
 // Solution by Iryna
 //1. https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
