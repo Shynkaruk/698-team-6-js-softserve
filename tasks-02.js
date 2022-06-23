@@ -29,9 +29,8 @@ function warnTheSheep(queue) {
   if (queue.indexOf("wolf") + 1 === queue.length) {
     return "Pls go away and stop eating my sheep";
   }
-  return `Oi! Sheep number ${
-    queue.length - queue.indexOf("wolf") - 1
-  }! You are about to be eaten by a wolf!`;
+  return `Oi! Sheep number ${queue.length - queue.indexOf("wolf") - 1
+    }! You are about to be eaten by a wolf!`;
 }
 
 //2 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
@@ -117,3 +116,12 @@ function past(h, m, s) {
 function isDivisible(n, x, y) {
   return n % y == 0 && n % x == 0 ? true : false;
 }
+
+
+
+
+
+
+
+
+
