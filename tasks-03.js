@@ -25,19 +25,19 @@ function giveMeFive(obj) {
 //Поглибленні задачі
 //1 Understanding closures - the basics
 // https://www.codewars.com/kata/56b71b1dbd06e6d88100092a/train/javascript
-function buildFun(n){
-  var res = []  
+function buildFun(n) {
+  var res = []
   function closuresFunction(index) {
-    return function() {
+    return function () {
       return index;
     };
   };
-  for (var i = 0; i< n; i++){
+  for (var i = 0; i < n; i++) {
     res.push(
       closuresFunction(i)
     )
   }
-  return res  
+  return res
 }
 
 //2 Fun with ES6 Classes #2 - Animals and Inheritance
@@ -81,8 +81,8 @@ function circleCircumference(circle) {
 
 //3. https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 function giveMeFive(obj) {
-  let arrayFive = [];
-  for (let key in obj) {
+  const arrayFive = [];
+  for (const key in obj) {
     if (key.length === 5) {
       arrayFive.push(key);
     }
@@ -92,4 +92,15 @@ function giveMeFive(obj) {
   }
   return arrayFive;
 }
+
+//Задачка про замикання
+// https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+function buildFun(n) {
+  var res = [];
+  for (let i = 0; i < n; i++) {
+    res.push(() => i);
+  }
+  return res;
+}
+
 
