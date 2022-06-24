@@ -11,8 +11,8 @@ class SmallestIntegerFinder {
 function circleCircumference(circle) {
   return Math.PI * circle.radius * 2;
 }
-//3 https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
-// Training JS #12: loop statement --for..in and for..of
+//3 Training JS #12: loop statement --for..in and for..of
+// https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 function giveMeFive(obj) {
   var fiveLetter = [];
   for (var key in obj) {
@@ -22,6 +22,23 @@ function giveMeFive(obj) {
   return fiveLetter;
 }
 
+//Поглибленні задачі
+//1 Understanding closures - the basics
+// https://www.codewars.com/kata/56b71b1dbd06e6d88100092a/train/javascript
+function buildFun(n){
+  var res = []  
+  function closuresFunction(index) {
+    return function() {
+      return index;
+    };
+  };
+  for (var i = 0; i< n; i++){
+    res.push(
+      closuresFunction(i)
+    )
+  }
+  return res  
+}
 
 //solution by Iryna
 //1. https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
