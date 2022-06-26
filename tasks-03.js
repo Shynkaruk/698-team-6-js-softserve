@@ -66,6 +66,8 @@ class Dog extends Animal {
     return `Hello ${this.master}`;
   }
 }
+
+
 //solution by Iryna
 //1. https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
 class SmallestIntegerFinder {
@@ -96,12 +98,35 @@ function giveMeFive(obj) {
 //Задачка про замикання
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n) {
-  var res = [];
+  const res = [];
   for (let i = 0; i < n; i++) {
     res.push(() => i);
   }
   return res;
 }
+
+//Задачка про наслідування
+// https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 0, "shark", status);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 4, "cat", status);
+    this.introduce = () => `${super.introduce()}  Meow meow!`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    super(name, age, 4, "dog", status);
+    this.greetMaster = () => `Hello ${master}`;
+  }
+}
+
 
 //solution by Yuliia
 //1. https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
