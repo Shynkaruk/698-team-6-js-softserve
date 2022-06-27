@@ -196,3 +196,31 @@ class Dog extends Animal {
   }
 }
 
+// Yura Shyndor		
+ 
+//task 1
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+//task 2
+
+function circleCircumference(circle) {
+  return Math.PI * circle.radius * 2;
+}
+
+//task 3
+
+function giveMeFive(obj){
+  //coding here
+  const fiveArr = [];
+  for (const key in obj) {
+    if(key.length === 5) fiveArr.push(key);
+    if(obj[key].length === 5) fiveArr.push(obj[key]);
+}
+  return fiveArr
+}
+
